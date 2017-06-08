@@ -3,6 +3,7 @@
 <meta charset="utf-8" />
 <head>
     <title>Sung Si Kyung</title>
+<script type = "text/javascript" src = "http://code.jquery.com/jquery-2.2.3.min.js"></script>
     <style>
         .back {
             background-image: url("Garden.jpg");
@@ -30,6 +31,9 @@
             font-family: "nanum gothic";
             font-size: 20px;
         }
+	#panel {
+		display: none;
+}
     </style>
 </head>
 <body class="back" id="top">
@@ -37,7 +41,7 @@
     <a href="#top"><img src="top.png" style="z-index:10; position:fixed; bottom:0; right:0;" width=45px; height=50px></a>
     <a href="index.html"><img src="back.png" style="z-index:10; position:fixed; bottom:0; right:45px;" width=50px; height=45px></a>
     <center><a target="_blank" href="sk.jpg"><img src="sk.jpg" width="350px"></a></center>
-    <pre>
+    <pre id="p1" style="display:none;">
 	    <b>이름</b> : 성시경
 	    <b>출생</b> : 1979년 4월 17일
 	    <b>신체</b> : 187cm, 77kg, A형
@@ -49,8 +53,9 @@
 	    신승훈, 윤종신, 김동률, 루시드폴을 잇는 감성 발라드 싱어송라이터. 깔끔하고 부드러운 음색과 가성을 자유자재로 사용한다.
 	    데뷔 이후, 오랜 기간동안 감성적인 발라드로 많은 사람들의 사랑을 받고 있다.
 	</pre>
-    <details>
-        <summary><b>성시경의 앨범들(정규)</b></summary>
+
+	<p id="p2" style="display:none;"><b id="flip">성시경의 앨범들(정규)</b></p>
+<div  id="panel">
         <table>
             <tr>
                 <td>
@@ -215,6 +220,7 @@
                 </td>
             </tr>
         </table>
-    </details>
+</div>
+<script type="text/javascript" src="move.js"></script>
 </body>
 </html>

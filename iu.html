@@ -3,6 +3,7 @@
 <meta charset="utf-8" />
 <head>
     <title>IU</title>
+<script type = "text/javascript" src = "http://code.jquery.com/jquery-2.2.3.min.js"></script>
     <style>
         .back {
             background-image: url("Garden.jpg");
@@ -30,6 +31,9 @@
             font-family: "nanum gothic";
             font-size: 20px;
         }
+	#panel {
+		display: none;
+}
     </style>
 </head>
 <body class="back" id="top">
@@ -37,7 +41,7 @@
     <a href="#top"><img src="top.png" style="z-index:10; position:fixed; bottom:0; right:0;" width=45px; height=50px></a>
     <a href="index.html"><img src="back.png" style="z-index:10; position:fixed; bottom:0; right:45px;" width=50px; height=45px></a>
     <center><a target="_blank" href="iu.jpg"><img src="iu.jpg" width="350px"></a></center>
-    <pre>
+    <pre id="p1" style="display:none;">
 	    <b>이름</b> : 아이유(본명: 이지은)
 	    <b>출생</b> : 1993년 5월 16일
 	    <b>신체</b> : 161.7cm, 45kg, A형
@@ -48,8 +52,9 @@
 
 	    대한민국의 여성 싱어송라이터이자 배우. 본명은 이지은. 아이유(IU)는 예명이다. 아이유(IU)는 '음악으로 너와 내가 하나가 된다'는 의미를 가지고 있다. 
 	</pre>
-    <details>
-        <summary><b>아이유의 앨범들</b></summary>
+
+	<p id="p2" style="display:none;"><b id="flip">아이유의 앨범들</b></p>
+<div  id="panel">
         <table>
             <tr>
                 <td>
@@ -286,6 +291,7 @@
                 </td>
             </tr>
         </table>
-    </details>
+</div>
+<script type="text/javascript" src="move.js"></script>
 </body>
 </html>

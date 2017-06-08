@@ -3,6 +3,7 @@
 <meta charset="utf-8" />
 <head>
     <title>Im Chang Jung</title>
+<script type = "text/javascript" src = "http://code.jquery.com/jquery-2.2.3.min.js"></script>
     <style>
         .back {
             background-image: url("Garden.jpg");
@@ -30,6 +31,9 @@
             font-family: "nanum gothic";
             font-size: 20px;
         }
+	#panel {
+		display: none;
+}
     </style>
 </head>
 <body class="back" id="top">
@@ -37,7 +41,7 @@
     <a href="#top"><img src="top.png" style="z-index:10; position:fixed; bottom:0; right:0;" width=45px; height=50px></a>
     <a href="index.html"><img src="back.png" style="z-index:10; position:fixed; bottom:0; right:45px;" width=50px; height=45px></a>
     <center><a target="_blank" href="cj.jpg"><img src="cj.jpg" width="350px"></a></center>
-    <pre>
+    <pre id="p1" style="display:none;">
 	    <b>이름</b> : 임창정
 	    <b>출생</b> : 1973년 11월 30일
 	    <b>신체</b> : 170.1cm, 62kg, B형
@@ -49,8 +53,9 @@
 	    사실상 멀티 엔터테이너라는 단어 자체를 만들어 낸 인물이자 국내 대표 만능 엔터테이너.
 	    1990년대 당시 가요계, 연기계, 예능계에서 까지 트리플 크라운을 달성했다. 내는 곡마다 대히트를 치며 국내 최고의 보컬리스트 중 하나라는 것을 증명했다.
 	</pre>
-    <details>
-        <summary><b>임창정의 앨범들(정규)</b></summary>
+
+	<p id="p2" style="display:none;"><b id="flip">임창정의 앨범들(정규)</b></p>
+<div  id="panel">
         <table>
             <tr>
                 <td>
@@ -338,6 +343,7 @@
                 </td>
             </tr>
         </table>
-    </details>
+</div>
+<script type="text/javascript" src="move.js"></script>
 </body>
 </html>

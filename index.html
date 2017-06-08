@@ -2,11 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <title>My favorite singers</title>
+<script type = "text/javascript" src = "http://code.jquery.com/jquery-2.2.3.min.js"></script>
 <style>
 .title {
 	font-family: sans-serif;
 	text-align: center;
-	font-size: 70px;
+	font-size: 12px;
 }
 
 .back{
@@ -17,27 +18,30 @@
 img {
 	position: static;
 	margin-left: 440px;
-}
 
+}
 td a:hover{
 	opacity : 0.6;
    }
+
 </style>
 </head>
 
 <body class="back">
-<div class="title">My favorite Singers</div>
+   <audio autoplay loop><source src="bgm.mp3" type="audio/mpeg"></audio>
+<div id="animate"class="title">My favorite Singers</div>
 <div>
 <table>
       <tr>
-         <td><a href="cj.html"><img src="cj.jpg" width = "300" ></a></td>
-         <td><a href="iu.html"><img src="iu.jpg" width = "300"></a></td>
+         <td><a id="cj" style="display:none;"><img src="cj.jpg" width = "300"></a></td>
+         <td><a id="iu" style="display:none;"><img src="iu.jpg" width = "300"></a></td>
       </tr>
       <tr>
-         <td><a href="sk.html"><img src="sk.jpg" width = "300"></a></td>
-         <td><a href="yk.html"><img src="yk.jpg" width = "300"></a></td>
+         <td><a id="sk" style="display:none;"><img src="sk.jpg" width = "300"></a></td>
+         <td><a id="yk" style="display:none;"><img src="yk.jpg" width = "300"></a></td>
       </tr>
    </div>
 </table>
+<script type="text/javascript" src="move.js"></script>
 </body>
 </html>

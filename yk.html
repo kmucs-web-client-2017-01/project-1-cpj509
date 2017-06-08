@@ -3,6 +3,7 @@
 <meta charset="utf-8" />
 <head>
     <title>Na Yoon Kwon</title>
+<script type = "text/javascript" src = "http://code.jquery.com/jquery-2.2.3.min.js"></script>
     <style>
         .back {
             background-image: url("Garden.jpg");
@@ -15,6 +16,7 @@
 
         ol {
             padding-left: 100px;
+	
         }
 
         p {
@@ -30,6 +32,9 @@
             font-family: "nanum gothic";
             font-size: 20px;
         }
+	#panel {
+		display: none;
+}
     </style>
 </head>
 <body class="back" id="top">
@@ -37,7 +42,7 @@
     <a href="#top"><img src="top.png" style="z-index:10; position:fixed; bottom:0; right:0;" width=45px; height=50px></a>
     <a href="index.html"><img src="back.png" style="z-index:10; position:fixed; bottom:0; right:45px;" width=50px; height=45px></a>
     <center><a target="_blank" href="yk.jpg"><img src="yk.jpg" width="350px"></a></center>
-    <pre>
+    <pre id="p1" style="display:none;">
 	    <b>이름</b> : 나윤권(본명: 황윤권)
 	    <b>출생</b> : 1984년 5월 14일
 	    <b>신체</b> : 180cm, 72kg, O형
@@ -48,8 +53,9 @@
 
 	    대한민국의 가수. 실력에 비해 인지도가 낮고 방송활동이 적어 아는 사람만 아는 가수다. 좋은 음색과 안정감이 장점이다.
 	</pre>
-    <details>
-        <summary><b>나윤권의 앨범들</b></summary>
+
+	<p id="p2" style="display:none;"><b id="flip">나윤권의 앨범들</b></p>
+<div  id="panel">
         <table>
             <tr>
                 <td>
@@ -125,6 +131,7 @@
                 </td>
             </tr>
         </table>
-    </details>
+</div>
+<script type="text/javascript" src="move.js"></script>
 </body>
 </html>
